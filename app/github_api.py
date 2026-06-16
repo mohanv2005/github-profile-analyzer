@@ -6,7 +6,7 @@ def get_user_profile(username):
     url = f"{BASE_URL}/{username}"
 
     response = requests.get(url)
-
+    print(response)
     if response.status_code == 200:
         return response.json()
 
@@ -22,4 +22,5 @@ def get_user_repositories(username):
     if response.status_code == 200:
         return response.json()
 
-    return []
+    if response.status_code != 200:
+        return None
