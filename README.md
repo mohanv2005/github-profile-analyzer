@@ -47,7 +47,7 @@ github-profile-analyzer/
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git https://github.com/mohanv2005/github-profile-analyzer
 ```
 
 Move into project folder:
